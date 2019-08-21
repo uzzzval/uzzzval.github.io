@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Ujjawal Sharma</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main_other.css">
+    <link rel="stylesheet" href="../../css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+     ================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+<!-- header
+================================================== -->
+<header>
+    <div class="row">
+        <div class="top-bar">
+            <a class="menu-toggle" href="#"><span>Menu</span></a>
+            <nav id="main-nav-wrap">
+                <ul class="main-navigation">
+                    <li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="">About</a></li>
+                    <li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div> <!-- /row -->
+</header> <!-- /header -->
+
+<!-- intro section
+================================================== -->
+<section id="intro">
+    <div class="intro-overlay"></div>
+    <div class="intro-content">
+        <div class="row">
+            <div class="col-twelve">
+                <h5>How to configure your IIS server for HTTPS</h5>
+                <h4> - Ujjawal Sharma</h4>
+            </div>
+        </div>
+    </div> <!-- /intro-content -->
+</section> <!-- /intro -->
+
+<!-- stats Section
+================================================== -->
+<section id="stats" class="count-up">
+    <div class="row">
+        <div class="col-five">
+            <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+            </div>
+        </div>
+    </div>
+</section> <!-- /stats -->
+
+<!-- resume Section <span style="color:red; display:inline;">HELLO</span>
+================================================== -->
+<section id="resume" class="grey-section">
+    <div class="row">
+        <div class="col-twelve">
+            <h4>1. Open the <span style="color:red; display:inline;">Intenet Information Services(IIS)</span> and you will observe a setup like as shown below, if you have already set up a default HTTP server. If not click here to do so. On the right panel, click on <span style="color:red; display:inline;">Bindings</span>.</h4></br>
+            <img src="../../images/https-setup/Capture_1.PNG" width="80%" height="80%"></br></br>
+            <h4>2. Now, you will be able to see the below screen. Click on <span style="color:red; display:inline;">Add</span>.</h4></br>
+            <img src="../../images/https-setup/Capture_2.PNG" width="80%" height="80%"></br></br>
+            <h4>3. You will now be prompted to fill in the up some details as shown in the following screenshot. </h4></br>
+            <img src="../../images/https-setup/Capture_3.PNG" width="80%" height="80%"></br></br>
+            <h4>4. Select <span style="color:red; display:inline;">Type</span> as <span style="color:red; display:inline;">https</span> ,leave <span style="color:red; display:inline;">IP address</span> as <span style="color:red; display:inline;">All Unassigned</span>, change <span style="color:red; display:inline;">Port Number</span> to <span style="color:red; display:inline;">443</span>. Fill in <span style="color:red; display:inline;">Host name</span> to the name of your domain for which you created the certificate. Select the <span style="color:red; display:inline;">SSL Certificate</span> from the dropdown. The dropdown contains list of all the Certificates which you will add to your server. Click on <span style="color:red; display:inline;">OK</span>. </h4></br>
+            <img src="../../images/https-setup/Capture_4.PNG" width="80%" height="80%"></br></br>
+            <h4>5. You will now observe your filled in details as shown below. Click <span style="color:red; display:inline;">Close</span>. </h4></br>
+            <img src="../../images/https-setup/Capture_5.PNG" width="80%" height="80%"></br></br>
+            <h4>6. You will now observe a new entry on the right side panel under <span style="color:red; display:inline;">Browser Website</span> section. Try clicking on it. </h4></br>
+            <img src="../../images/https-setup/Capture_6.PNG" width="80%" height="80%"></br></br>
+            <h4>7. You will now observe that it will give you an error saying that the site cannot be reached. We will now move towards the next steps. </h4></br>
+            <img src="../../images/https-setup/Capture_7.PNG" width="80%" height="80%"></br></br>
+            <h4>8. On the <span style="color:red; display:inline;">Explorer</span> on the Windows Operating System, navigate to <span style="color:red; display:inline;">C:\Windows\System32\drivers\etc</span> and try editing <span style="color:red; display:inline;">hosts</span> file. </h4></br>
+            <img src="../../images/https-setup/Capture_8.PNG" width="80%" height="80%"></br></br>
+            <h4>9. But before editing, you have to get the proper permissions to edit the file. Right click on <span style="color:red; display:inline;">hosts</span> file and click on <span style="color:red; display:inline;">properties</span>.</h4></br>
+            <img src="../../images/https-setup/Capture_9.PNG" width="80%" height="80%"></br></br>
+            <h4>10. On the properties box, navigate to <span style="color:red; display:inline;">Security</span> tab, then under the <span style="color:red; display:inline;">Group or user names</span> section, select <span style="color:red; display:inline;">Users</span>, then click <span style="color:red; display:inline;">Edit</span>. You will now observe the <span style="color:red; display:inline;">Permission for hosts</span> box. Select <span style="color:red; display:inline;">Users</span>, click on <span style="color:red; display:inline;">Add</span>. Now, you will observe <span style="color:red; display:inline;">Select Users or Groups</span> box. Under the <span style="color:red; display:inline;">Enter the object names to select</span>, enter the name of Computer's username and click on <span style="color:red; display:inline;">Check Name</span>.</h4></br>
+            <img src="../../images/https-setup/Capture_10.PNG" width="80%" height="80%"></br></br>
+            <h4>11. After you click <span style="color:red; display:inline;">Check Name</span> in the previous step, the entry under <span style="color:red; display:inline;">Enter the object name to select</span> should turn to as shown following. Click <span style="color:red; display:inline;">OK</span>.</h4></br>
+            <img src="../../images/https-setup/Capture_11.PNG" width="80%" height="80%"></br></br>
+            <h4>12. You will now observe the <span style="color:red; display:inline;">Permissions for hosts</span> box changed to as shown below. Click <span style="color:red; display:inline;">Apply</span>. Click <span style="color:red; display:inline;">Ok</span>. Do the same for the properties box as well.</h4></br>
+            <img src="../../images/https-setup/Capture_12.PNG" width="80%" height="80%"></br></br>
+            <h4>13. Open the <span style="color:red; display:inline;">hosts</span> file in a notepad. Add the entry for your site and point it to <span style="color:red; display:inline;">127.0.0.1</span>.</h4></br>
+            <img src="../../images/https-setup/Capture_13.PNG" width="80%" height="80%"></br></br>
+            <h4>14. Try reaching out the site again. This time you will observe that the browser will give you <span style="color:red; display:inline;">Unsecure Connection</span> error, as shown below. We will now perform the next steps.</h4></br>
+            <img src="../../images/https-setup/Capture_14.PNG" width="80%" height="80%"></br></br>
+            <h4>15. From the windows search option, type <span style="color:red; display:inline;">mmc</span>, when the <span style="color:red; display:inline;">mmc</span> icon appears, right click on it and then click on <span style="color:red; display:inline;">Run as administrator</span>.</h4></br>
+            <img src="../../images/https-setup/Capture_15.PNG" width="80%" height="80%"></br></br>
+            <h4>16. Under the <span style="color:red; display:inline;">Console Root</span> tree, expand <span style="color:red; display:inline;">Certificates (Local Computer)</span>, then expand <span style="color:red; display:inline;">Personal</span>, then <span style="color:red; display:inline;">Certificates</span>. Now, you will observe your site certificate in the list. Right Click and copy it.</h4></br>
+            <img src="../../images/https-setup/Capture_16.PNG" width="80%" height="80%"></br></br>
+            <h4>17. Now, expand the <span style="color:red; display:inline;">Trusted Root Certificates</span> option and click on <span style="color:red; display:inline;">Certificates</span>. Paste the copied certificate here.</h4></br>
+            <img src="../../images/https-setup/Capture_17.PNG" width="80%" height="80%"></br></br>
+            <h4>18. You will observe your copied certificate in the <span style="color:red; display:inline;">Trusted Root Certificates</span> list. Close the <span style="color:red; display:inline;">mmc</span> window.</h4></br>
+            <img src="../../images/https-setup/Capture_18.PNG" width="80%" height="80%"></br></br>
+            <h4>19. On the <span style="color:red; display:inline;">IIS server</span> application window, click on <span style="color:red; display:inline;">Bindings</span> again, and then remove the http Site <span style="color:red; display:inline;">Bindings</span> options, so that your website should be accessible only over the secured layer.</h4></br>
+            <img src="../../images/https-setup/Capture_19.PNG" width="80%" height="80%"></br></br>
+            <h4>20. After you have removed it, you will observe that it disappear from the right pane <span style="color:red; display:inline;">Browser website</span> section as well. We are all done!</h4></br>
+            <img src="../../images/https-setup/Capture_20.PNG" width="80%" height="80%"></br></br>
+            <h4>21. Try clearing the Broswer's cache (using ctrl+alt+del) and then hit the website again. You will now observe your website is getting delivered to you on a secure channel. </h4></br>
+            <img src="../../images/https-setup/Capture_21.PNG" width="80%" height="80%"></br></br>
+        </div>
+    </div>
+</section>
+
+
+<!-- stats Section
+================================================== -->
+<section id="stats" class="count-up">
+    <div class="row">
+        <div class="col-five">
+            <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+            </div> <!-- /stats-list -->
+        </div> <!-- /twelve -->
+    </div> <!-- /row -->
+</section> <!-- /stats -->
+
+
+<!-- contact
+================================================== -->
+<section id="contact">
+
+    <div class="row section-intro">
+        <div class="col-twelve">
+
+            <h5>Contact</h5>
+            <h1>I'd Love To Hear From You.</h1>
+
+            <p class="lead">I love interacting with people who are interested in sharing their views and ideas about my domain of work. Please leave a message so that we can connect.</p>
+
+        </div>
+    </div> <!-- /section-intro -->
+
+    <div class="row contact-form">
+
+        <div class="col-twelve">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+                <fieldset>
+
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="submitform">Submit</button>
+                        <div id="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning">
+            </div>
+            <!-- contact-success -->
+            <div id="message-success">
+                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+            </div>
+
+        </div> <!-- /col-twelve -->
+
+    </div> <!-- /contact-form -->
+
+    <div class="row contact-info">
+
+        <div class="col-four tab-full">
+
+            <div class="icon">
+                <i class="icon-pin"></i>
+            </div>
+
+            <h5>Where to find me</h5>
+
+            <p>
+                3333, North Charles Street, #304<br>
+                Baltimore, MD<br>
+                21218 US
+            </p>
+
+        </div>
+
+        <div class="col-four tab-full collapse">
+
+            <div class="icon">
+                <i class="icon-mail"></i>
+            </div>
+
+            <h5>Email Me At</h5>
+
+            <p>usharma8@jhu.edu<br>
+                ujjawal.sharma@hotmail.com
+            </p>
+
+        </div>
+
+        <div class="col-four tab-full">
+
+            <div class="icon">
+                <i class="icon-phone"></i>
+            </div>
+
+            <h5>Call Me At</h5>
+
+            <p>Phone: (+1) 443 554 0627<br>
+
+            </p>
+
+        </div>
+
+    </div> <!-- /contact-info -->
+
+</section> <!-- /contact -->
+
+
+<!-- footer
+================================================== -->
+
+<footer>
+    <div class="row">
+
+        <div class="col-six tab-full pull-right social">
+
+            <ul class="footer-social">
+                <li><a href="https://www.facebook.com/sharma.ujjawal"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ujjawal-sharma-87361b37/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/uzzzval"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/uzzzval"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.instagram.com/sharma_ujjawal/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+
+        </div>
+
+    </div> <!-- /row -->
+</footer>
+
+<div id="preloader">
+    <div id="loader"></div>
+</div>
+
+<!-- Java Script
+================================================== -->
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
