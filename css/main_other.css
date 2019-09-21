@@ -744,6 +744,23 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	padding: 0;
 }
 
+button.success, .button.success {
+	background: transparent !important;
+	border: 3px solid #313131;
+	line-height: 4.8rem;
+	width: 100%;
+}
+button.success.medium, .button.success.medium {
+	line-height: 5.1rem !important;
+}
+button.success.large, .button.success.large {
+	line-height: 5.4rem !important;
+}
+button.success:hover, .button.success:hover {
+	border: 3px solid #FF0077;
+	color: #FF0077;
+}
+
 
 /** 
  * ===================================================================

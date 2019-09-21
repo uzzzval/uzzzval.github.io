@@ -353,7 +353,7 @@ th:last-child, td:last-child {
  * -------------------------------------------------------------------
  */
 button, .button {
-	margin-bottom: 1.2;
+	margin-bottom: 1.2rem;
 }
 fieldset {
 	margin-bottom: 1.5rem;
@@ -710,6 +710,7 @@ input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
 	background: #1f1f1f;
 }
+
 button.full-width, .button.full-width {
 	width: 100%;
 	margin-right: 0;
@@ -2095,7 +2096,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #services {
-	background: #313131 url(../images/bg_bkup.jpg) no-repeat center;
+	background: #313131 url(../images/bg.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -2535,6 +2536,7 @@ footer .copyright span::after {
 footer .copyright span:last-child::after {
 	display: none;
 }
+
 
 /**
  * responsive:
